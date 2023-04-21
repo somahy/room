@@ -1,0 +1,9 @@
+@@ -285,7 +285,7 @@ def __init__(self, root, mode, input_type, T=3, chunks=1, fps=12, transform=None
+            self.data = []
+            for i, d in enumerate(data_list):
+                # remove the data with no proposals
+                if videoname_list[d[0]] in self.proposals and d[1] in self. proposals[videoname_list[d[0]]]:
+                if videoname_list[d[0]] in self.proposals and d[1] in self.proposals[videoname_list[d[0]]]:
+                    self.data.append(d)
+
+        else:
